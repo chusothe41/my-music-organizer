@@ -1,10 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * A class to hold details of audio files.
  * 
- * @author David J. Barnes and Michael Kölling
- * @version 2011.07.31
  */
 public class MusicOrganizer
 {
@@ -57,19 +54,21 @@ public class MusicOrganizer
      */
     public void listAllFiles()
     {
-        for(String filename : files) {
-            System.out.println(filename);
-        }
+            for(String filename : files)
+            {
+                System.out.println(filename);
+            }
     }
     
     /**
-     * List the names of files matching the given search string.
-     * @param searchString The string to match.
+     * Busca archivos que contengan la palaba introducida por un parametro
      */
     public void listMatching(String searchString)
     {
-        for(String filename : files) {
-            if(filename.contains(searchString)) {
+        for(String filename : files) 
+        {
+            if(filename.contains(searchString)) 
+            {
                 // A match.
                 System.out.println(filename);
             }
